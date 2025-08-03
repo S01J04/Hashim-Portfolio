@@ -1,0 +1,48 @@
+---
+title: "Calories Advisor"
+publishedAt: "2024-07-25"
+summary: "A Streamlit app that analyzes uploaded food images using AI to estimate calories, provide nutritional breakdowns, and offer health advice."
+images:
+  - "/images/projects/project-01/calories-advisor-01.jpeg"
+  - "/images/projects/project-01/calories-advisor-02.jpeg"
+  - "/images/projects/project-01/calories-advisor-03.jpeg"
+team:
+  - name: "Muhammad Hashim"
+    role: "AI & Automation Engineer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://linkedin.com/in/engr-hashim"
+link: "https://github.com/EngrHashim160"
+---
+
+## Overview
+
+I developed **Calories Advisor**, an AI-powered Streamlit web application that helps users evaluate their meals through food image uploads. The system detects food items, estimates calories, and generates a comprehensive health report with nutritional breakdowns and wellness tips.
+
+## Key Features
+
+- *Image Upload*: Accepts food images in JPG, JPEG, and PNG formats
+- *Multi-item Detection*: Identifies multiple food items in a single image
+- *Calorie Estimation*: Calculates estimated calorie content for each item
+- *Meal Health Evaluation*: Provides an overall rating of meal healthiness
+- *Nutrient Breakdown*: Displays percentage-wise distribution of carbohydrates, fats, proteins, sugars, and fibers
+- *Health Tips*: Offers AI-generated dietary advice based on meal composition
+
+## Technologies Used
+
+- *Frontend*: Streamlit
+- *Backend AI*: Google Gemini Pro 2.5 via `google.generativeai`
+- *Image Handling*: Pillow
+- *Environment Management*: Python virtual environment, `.env` for API key
+
+## Challenges and Solutions
+
+One challenge was balancing inference accuracy with image variability. I addressed this by designing prompt templates optimized for Gemini's multimodal inputs. The system also includes fallback messaging when confidence scores are low.
+
+## Outcome
+
+The application:
+- Enabled users to visually assess their food choices
+- Simplified nutritional planning without manual input
+- Delivered actionable health suggestions instantly
+
+This project highlights my ability to combine vision and language AI in real-world wellness applications, showcasing strong alignment between user experience and intelligent automation.

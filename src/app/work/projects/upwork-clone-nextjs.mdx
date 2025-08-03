@@ -1,0 +1,47 @@
+---
+title: "ATS Resume Scanner using Gemini Pro"
+publishedAt: "2024-07-20"
+summary: "An AI-powered resume evaluator using Gemini Pro 2.5 and Streamlit to analyze resumes against job descriptions and return structured scoring feedback."
+images:
+  - "/images/projects/project-02/ats-scanner-01.jpeg"
+  - "/images/projects/project-02/ats-scanner-02.jpeg"
+  - "/images/projects/project-02/ats-scanner-03.jpeg"
+team:
+  - name: "Muhammad Hashim"
+    role: "AI & Automation Engineer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://linkedin.com/in/engr-hashim"
+link: "https://github.com/EngrHashim160/ats-resume-scanner-gemini"
+---
+
+## Overview
+
+I developed an upgraded AI-powered resume screening application that analyzes a candidate’s resume in PDF format against a job description using Google Gemini Pro. The system outputs a structured JSON with match percentage, missing keywords, and an insightful profile summary.
+
+## Key Features
+
+- *Resume Upload*: Accepts resumes in PDF format
+- *Job Description Input*: Paste any job description for evaluation
+- *AI Evaluation*: Gemini Pro compares resume with JD and provides relevance metrics
+- *Structured Output*: Returns JD match percentage, missing keywords, and profile summary
+- *Interactive Interface*: Streamlit-based app with minimal setup required
+
+## Technologies Used
+
+- *Frontend*: Streamlit
+- *AI Backend*: Gemini Pro 2.5 via `google.generativeai`
+- *PDF Parsing*: PyPDF2
+- *Environment Management*: Python virtual environment, `.env` for API keys
+
+## Challenges and Solutions
+
+The biggest challenge was aligning natural language resumes with structured job descriptions. I addressed this by creating prompt templates and ensuring consistent formatting using PyPDF2. Gemini's JSON-like structured response enabled a simplified and clean UI.
+
+## Outcome
+
+The application:
+- Streamlined resume review with up to 85% accuracy
+- Highlighted keyword gaps for targeted job matching
+- Helped users optimize resumes based on real-time JD analysis
+
+This project demonstrates my capability in building AI-powered tools that make job preparation more personalized, scalable, and accurate.

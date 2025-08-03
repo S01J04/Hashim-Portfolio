@@ -1,0 +1,50 @@
+---
+title: "YouTube to Blog Automation Pipeline"
+publishedAt: "2025-07-01"
+summary: "A fully automated pipeline that converts YouTube videos into structured blog articles using state-of-the-art LLMs and embedding models."
+images:
+  - "/images/projects/project-05/cover-01.jpg"
+team:
+  - name: "Muhammad Hashim"
+    role: "AI & Automation Engineer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://linkedin.com/in/engr-hashim"
+link: "https://github.com/EngrHashim160/youtube-to-blog-agent"
+---
+
+## Overview
+
+Developed a modular and scalable pipeline that transforms YouTube videos into SEO-friendly blog articles. It integrates transcription, summarization, and formatting agents using LangChain CrewAI framework and Hugging Face embeddings. The pipeline supports multiple LLM backends such as Groq (LLaMA3) and OpenAI, with flexibility for both free and paid APIs.
+
+## Key Features
+
+- *Video to Text*: Converts YouTube videos into accurate text using Whisper and YouTubeTranscriptAPI.
+- *Multi-Agent Workflow*: Orchestrated agentic tasks including content cleaning, summarization, headline generation, and final blog formatting.
+- *Embedding Search*: Used HuggingFace embedding models for context injection and topic relevance.
+- *Backend Flexibility*: Supports Groq-hosted LLaMA3, OpenAI GPT models, and others for generation tasks.
+- *Auto-Save to Markdown*: Final blog is saved as a clean, readable markdown file for CMS or static site deployment.
+
+## Technologies Used
+
+- *Frontend*: Not Applicable (Backend-focused project)
+- *Agent Framework*: CrewAI, LangGraph
+- *LLMs*: LLaMA3 (via Groq), GPT-4, GPT-3.5
+- *Embeddings*: HuggingFace Transformers (BGE-small-en, all-MiniLM-L6-v2)
+- *Vector Store*: FAISS
+- *Text Handling*: LangChain (text splitters, document loaders)
+- *Automation Tools*: Python, Shell scripts
+- *Deployment*: Local execution + Zapier Integration for Triggered Runs
+
+## Challenges and Solutions
+
+- **Token Overflow**: Managed long video transcripts by chunking and injecting relevant context using embeddings and recursive splitters.
+- **Model Costs & Speed**: Designed backend-agnostic modularity to switch between Groq (faster) and OpenAI (more accurate) as needed.
+- **Agent Coordination**: Used LangGraph to manage task flow among multiple autonomous agents.
+
+## Outcome
+
+- Reduced content creation time by **80%** compared to manual video summarization.
+- Blog quality maintained at **90%+ factuality** by using validation agents.
+- Successfully automated 50+ YouTube videos into publish-ready articles.
+
+This project showcases my practical application of **Agentic AI systems**, **LLMs**, and **automation pipelines**, demonstrating real-world content generation workflows powered by artificial intelligence.

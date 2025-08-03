@@ -1,0 +1,47 @@
+---
+title: "AI-Powered Crop Disease Detection"
+publishedAt: "2024-06-15"
+summary: "An AI-driven crop disease classification system using multiple deep learning models for wheat, rice, maize, and sugarcane."
+images:
+  - "/images/projects/project-04/crop-ai-01.jpeg"
+  - "/images/projects/project-04/crop-ai-02.jpeg"
+  - "/images/projects/project-04/crop-ai-03.jpeg"
+team:
+  - name: "Muhammad Hashim"
+    role: "AI & Automation Engineer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://linkedin.com/in/engr-hashim"
+link: "https://github.com/EngrHashim160"
+---
+
+## Overview
+
+I developed a crop disease detection platform that classifies diseases in wheat, rice, maize, and sugarcane using deep learning models. This system helps farmers identify plant diseases early and accurately through a mobile app powered by AI.
+
+## Key Features
+
+- *Multimodel Architecture*: Trained and deployed separate CNN-based models for each crop type to improve accuracy.
+- *Disease Classification*: Detects specific diseases like leaf blight, rust, and bacterial spots across different crop types.
+- *Flutter Integration*: Integrated the models into a mobile app frontend built using Flutter and Dart.
+- *TensorFlow Models*: Each model was saved as an `.h5` file and loaded dynamically based on selected crop type.
+- *Offline Functionality*: Ensured the models could run on-device without needing internet access for predictions.
+
+## Technologies Used
+
+- *Deep Learning*: TensorFlow, Keras
+- *Model Format*: .h5
+- *Frontend*: Flutter (Dart)
+- *Deployment*: Android APK with embedded models
+
+## Challenges and Solutions
+
+A major challenge was handling multiple crop types with differing data distributions. I tackled this by creating modular pipelines and training crop-specific models to boost classification accuracy. Another challenge was optimizing models to run efficiently on mobile devices, which I addressed through quantization and pruning.
+
+## Outcome
+
+The platform:
+- Achieved over 90% test accuracy on all models
+- Enabled farmers to detect diseases offline
+- Reduced dependency on expert visits for basic diagnoses
+
+This project showcases my ability to combine AI, mobile development, and agricultural insights into a scalable and user-friendly solution.
