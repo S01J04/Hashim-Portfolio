@@ -161,11 +161,11 @@ const work = {
   description: `Projects and AI tools built by ${person.name}`,
 };
 
-// const gallery = {
-//   label: "Gallery",
-//   title: "Photo Gallery",
-//   description: `Snapshots from ${person.name}'s journey`,
-//   images: [],
-// };
+const gallery = {
+  label: "Gallery",
+  title: "Photo Gallery",
+  description: `Snapshots from ${person.name}'s journey`,
+  images: [],
+};
 
 export { person, social, newsletter, home, about, blog, work,  };
