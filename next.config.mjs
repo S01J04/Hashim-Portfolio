@@ -1,23 +1,12 @@
-import mdx from "@next/mdx";
-
-const withMDX = mdx({
-  extension: /\.mdx?$/,
-  options: {},
-});
-
+// next.config.mjs
 /** @type {import('next').NextConfig} */
-
-// next.config.js
 const nextConfig = {
-    pageExtensions: ["ts", "tsx", "md", "mdx"],
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // disable ESLint
   },
   typescript: {
-    ignoreBuildErrors: true, // ✅ Disables TypeScript errors during build
+    ignoreBuildErrors: true, // disable TypeScript errors during build
   },
 };
 
-module.exports = nextConfig;
-
-export default withMDX(nextConfig);
+export default nextConfig; // ✅ Correct export for .mjs
